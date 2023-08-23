@@ -1,0 +1,99 @@
+/* Reset / sanitize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Basic */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+
+@media (min-width:900px) {
+    .container {
+        width: 91%;
+        max-width: 1240px;
+    }
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid currentColor;
+    color: #2e5180;
+    width: 175px;
+    padding: 14px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+#overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay_nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+#overlay_nav li:not(:last-child) {
+    margin-bottom: 38px;
+}
+
+#overlay_nav a {
+    color: white;
+    font-size: 19px;
+}
+
+.close_icon {
+    position: absolute;
+    top: 40px;
+    color: white;
+    right: 40px
+}
+
+@media (min-width:900px) {
+    #overlay {
+        display: none;
+    }
+}
+
+.slide-from-right {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

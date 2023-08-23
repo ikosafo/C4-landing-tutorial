@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Azubi Africa | Tailor made Cloud Engineering, Front-End Developer and Data Analytics Courses</title>
+    <meta name="description" content="This is a frontend Developer program">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&family=Roboto:wght@100;300;500;900&display=swap"
+        rel="stylesheet">
+    <script src="./feather.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+    <!-- The header section -->
+    <header class="header">
+        <div class="container">
+
+            <!-- logo here -->
+            <div class="site_logo">
+                <img src="./img/logo.png" alt="Azubi Africa logo">
+            </div>
+
+            <!-- Nav items here -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact" class="btn">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!--  Menu icon here -->
+            <div class="menu_icon">
+                <i data-feather="menu" onclick="showOverlay()"></i>
+            </div>
+        </div>
+
+        <!-- Overlay here -->
+        <div id="overlay">
+            <nav id="overlay_nav">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact" class="btn">Contact Us</a></li>
+                </ul>
+                <div class="close_icon">
+                    <i data-feather="x" onclick="hideOverlay()"></i>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <script>
+        feather.replace();
+
+        function showOverlay() {
+            document.getElementById("overlay").style.display = "flex";
+            document.getElementById("overlay").classList.add("slide-from-right");
+        }
+
+        function hideOverlay() {
+            document.getElementById("overlay").style.display = "none";
+        }
+
+
+    </script>
+</body>
+
+</html>

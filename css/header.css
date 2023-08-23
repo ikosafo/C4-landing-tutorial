@@ -1,0 +1,44 @@
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    align-items: center;
+}
+
+/* Site logo */
+.site_logo img {
+    width: 142px;
+}
+
+@media (min-width:900px) {
+    .header .container {
+        height: 100px;
+    }
+
+    .site_logo img {
+        width: 200px;
+    }
+}
+
+@media (max-width:899px) {
+    .nav {
+        display: none;
+    }
+}
+
+/* Nav for desktop */
+@media (min-width:900px) {
+    .menu_icon {
+        display: none;
+    }
+
+    .nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .nav li:not(:last-child) {
+        margin-right: 23px;
+    }
+}
