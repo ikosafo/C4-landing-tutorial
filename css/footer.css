@@ -1,0 +1,52 @@
+.footer {
+    padding: 38px 0 56px;
+    background-color: rgba(41, 81, 128, 0.8);
+}
+
+.location-address,
+.phone-address {
+    display: flex;
+    color: #fff;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.footer .sns {
+    display: flex;
+    list-style: none;
+    gap: 20px
+}
+
+.icon_social {
+    color: #fff;
+    margin-top: 40px;
+}
+
+.footer img {
+    width: 260px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:900px) {
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .footer {
+        padding: 112px 0 88px;
+        margin-top: -60px;
+    }
+
+    .contact {
+        position: relative;
+    }
+}
