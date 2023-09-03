@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!-- This line is the document type declaration (DOCTYPE) for HTML5. 
+    It tells the browser that the document is written in HTML5, which is the latest version of HTML. -->
+
+
+<html lang="en">
+<!-- `<html lang="en">` is an important declaration in an HTML document. 
+- `<html>` is the opening tag that marks the beginning of the HTML document.
+- `lang` stands for "language," and in this context, it is used to specify the language of the
+document's content. In this case, it's set to "en," which represents English.
+- Setting the `lang` attribute to the appropriate language is essential for accessibility and
+search engine optimization (SEO). It helps screen readers and search engines understand the language of the content,
+making it more accessible to users with disabilities and ensuring that search engines index the content correctly.
+- The `lang` attribute can also be used for localization. If your website has content in multiple
+languages, you can set the `lang` attribute on specific sections or elements to indicate the language of that particular
+content.
+- While modern web browsers are quite good at automatically detecting the language of the
+content, explicitly setting the `lang` attribute can help ensure consistent rendering and behavior across different
+browsers and platforms.
+- Search engines use the `lang` attribute as one of the factors in determining the relevance and
+ranking of a webpage for specific language-based searches. So, setting it correctly can have SEO benefits. 
+-->
+
+<head>
+    <!-- The `<head>` element contains metadata about the document, such as the document's title, character encoding, and 
+        links to external resources like stylesheets and scripts. -->
+
+
+    <meta charset="UTF-8">
+    <!-- This line specifies the character encoding for the document, which is UTF-8. 
+        UTF-8 is a widely used character encoding that supports various languages and characters. -->
+
+
+    <title>Azubi Africa | Tailor made Cloud Engineering, Front-End Developer and Data Analytics Courses</title>
+    <!-- This line sets the title of the web page that appears in the browser's title bar or tab. 
+        It provides a brief description of the page's content. -->
+
+
+    <meta name="description" content="This is a frontend Developer program">
+    <!-- This `<meta>` tag provides a brief description of the web page's content. 
+        Search engines often use this description in search results. -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This meta tag defines the viewport settings for the web page, 
+        ensuring that the page is displayed correctly on different devices and screen sizes. -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- This line establishes a preconnection to the Google Fonts server, 
+        which can improve the loading speed of fonts later in the document. -->
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Similar to the previous line, this preconnects to the Google Fonts server but specifies the 
+    "crossorigin" attribute, which is important for security when loading resources from different domains. -->
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&family=Roboto:wght@100;300;500;900&display=swap"
+        rel="stylesheet">
+    <!-- This line imports external fonts (Poppins and Roboto) from Google Fonts using a link tag. These fonts can then be
+    used in the web page's styles. -->
+
+
+    <script src="./feather.js"></script>
+    <!-- This line includes an external JavaScript file named "feather.js" from the current directory. It is used to replace
+    HTML elements with icons using the Feather Icons library. -->
+
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- This line links an external CSS stylesheet named "styles.css" located in the "css" directory.
+        It is used to apply styles to the entire website. -->
+
+
+    <link rel="stylesheet" href="./css/header.css">
+    <!--  This line links another external CSS stylesheet named "header.css" from the "css" directory. It contains
+    styles specific to the header section of the website. -->
+
+
+    <link rel="stylesheet" href="./css/hero.css">
+    <!-- This line links an external CSS stylesheet named "hero.css" from the "css" directory. 
+        It contains styles for the hero section of the website. -->
+
+
+    <link rel="stylesheet" href="./css/services.css">
+    <!-- This line links an external CSS stylesheet named "services.css" from the "css" directory. 
+    It contains styles for the services section of the website. -->
+
+
+    <link rel="stylesheet" href="./css/contact.css">
+    <!-- This line links an external CSS stylesheet named "contact.css" from the "css" directory.
+    It contains styles for the contact section of the website. -->
+
+
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- This line links an external CSS stylesheet named "footer.css" from the "css" directory.
+    It contains styles for the footer section of the website. -->
+
+
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <!-- This line specifies the favicon (website icon) for the web page, which appears in the browser tab. 
+    It uses a PNG image named "logo.png" located in the "img" directory. -->
+
+
+</head>
+
+<body>
+    <!-- The header section -->
+    <header class="header">
+        <!-- This line defines a `<header>` element with a `class` attribute set to "header". This element is typically used
+            to contain introductory content at the top of a webpage, like a website's logo and navigation menu. -->
+
+
+        <div class="container">
+            <!-- Inside the header, there is a `<div>` element with a `class` attribute set to "container". The "container"
+                class is often used to wrap and center the content within a specific section of the webpage. -->
+
+            <!-- logo here -->
+            <div class="site_logo">
+                <!-- Within the container, another `<div>` element with a `class` attribute "site_logo" is defined. This is
+                    where the website's logo is expected to be placed. -->
+
+
+                <img src="./img/logo.png" alt="Azubi Africa logo">
+                <!-- Inside the "site_logo" `<div>`, there's an `<img>` element. It's used to display an image with a `src`
+                    attribute pointing to "./img/logo.png". The `alt` attribute provides alternative text for
+                    accessibility purposes and describes the image as "Azubi Africa logo." -->
+
+            </div>
+
+            <!-- Nav items here -->
+            <nav class="nav">
+                <!-- After the logo, a `<nav>` element with a `class` attribute set to "nav" is used to define the website's
+                    navigation menu. -->
+
+
+                <ul>
+                    <!-- Within the navigation menu, there's an unordered list (`<ul>`) containing list items (`<li>`). Each
+                            `<li>` represents a menu item. In this case, there are three menu items: "About Us," "Services,"
+                            and "Contact Us." -->
+
+
+                    <li><a href="#about">About Us</a></li>
+                    <!-- Inside each list item, there's an anchor (`<a>`) element with an `href` attribute pointing to
+                        different sections of the webpage using HTML fragment identifiers (e.g., "#about"). This allows
+                        users to navigate to specific sections when they click on these links. The text "About Us"
+                        serves as the visible link text. -->
+
+
+                    <li><a href="#services">Services</a></li>
+
+                    <li><a href="#contact" class="btn">Contact Us</a></li>
+                    <!-- The "Contact Us" menu item has an additional `class` attribute set to "btn," which indicates
+                    that it should have a button-like appearance. This class can be used for styling with CSS. -->
+
+
+                </ul>
+            </nav>
+
+            <!--  Menu icon here -->
+            <div class="menu_icon">
+                <!-- After the navigation menu, there's another `<div>` element with the class "menu_icon." This is where an
+                    icon, representing a menu, is displayed. -->
+
+
+                <i data-feather="menu" onclick="showOverlay()"></i>
+                <!-- Inside the "menu_icon" `<div>`, an `<i>` element is used to display an icon. The `data-feather`
+                        attribute is used with a JavaScript library like Feather Icons. The `onclick` attribute is
+                        set to a JavaScript function "showOverlay()" which is responsible for showing a
+                        navigation overlay when the icon is clicked. -->
+
+
+            </div>
+        </div>
+
+        <!-- Overlay here -->
+        <div id="overlay">
+            <!--  This `<div>` defines an overlay container with the `id` attribute set to "overlay." Overlays are often used
+                to display additional content or menus on top of the main webpage content. -->
+
+
+            <nav id="overlay_nav">
+                <!--  Inside the overlay container, there's another `<nav>` element with the `id` attribute "overlay_nav."
+                    This is the container for the overlay menu. -->
+
+
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact" class="btn">Contact Us</a></li>
+                </ul>
+                <div class="close_icon">
+                    <!--  Within the overlay menu, there's a `<div>` element with the class "close_icon." This is used to
+                        display an icon for closing or hiding the overlay. -->
+
+
+                    <i data-feather="x" onclick="hideOverlay()"></i>
+                    <!-- Inside the "close_icon" `<div>`, there's an `<i>` element representing an "x" icon. The
+                            `data-feather` attribute is also associated with a library for icons. The `onclick` attribute
+                            is set to a JavaScript function "hideOverlay()" which handles the hiding of the
+                            overlay when this icon is clicked. -->
+
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- The hero section -->
+    <section class="hero">
+        <!--   This line starts a new HTML section element with the class attribute set to "hero."
+        The class attribute is often used to apply CSS styles or JavaScript behaviors to elements with a specific class. -->
+
+
+        <div class="headline">
+            <!-- Inside the `<section>` element, another `<div>` element is created with the class attribute set to "headline."
+                This is used to structure and style a specific section of content within the larger section. -->
+
+
+            <div class="container">
+                <!-- Within the "headline" `<div>`, there's another nested `<div>` element with the class attribute set to "container."
+                    This class is commonly used in web development for creating a container to hold and 
+                    center content within a specific section or element. -->
+
+
+                <h1>Earn yourself the Tech Career that you deserve</h1>
+                <!-- Inside the "container" `<div>`, there's an `<h1>` (header 1) element containing text.
+                        This is typically used for displaying the main heading or title of a section or page. -->
+
+
+                <p>More than 23,000 job openings exist for cloud
+                    developers and data analysts!</p>
+                <!--  Following the `<h1>` element, there's a `<p>` (paragraph) element containing a sentence of text.
+                        Paragraph elements are used for displaying regular text content.. -->
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The about section -->
+    <section class="about" id="about">
+        <!-- This line defines an HTML `<section>` element. The `class` attribute assigns the class name "about" to this section, 
+            which can be used for styling or scripting purposes.
+            The `id` attribute sets the unique identifier "about" for this section, which can be used for linking to
+            this section from other parts of the webpage (i.e at the header section). -->
+
+
+        <div class="container">
+
+            <h2>Why Azubi Africa?</h2>
+            <!-- This line creates an HTML heading level 2 (`<h2>`) element.
+                Headings are used to define the structure and hierarchy of content on a webpage. In this case, it
+                displays the text "Why Azubi Africa?" as a subheading. -->
+
+
+            <p>People learn best by doing. Our program is not just an endless series of video lessons. It
+                incorporates
+                experiential learning throughout, using interactive labs that put you in control of interesting
+                situations.</p>
+        </div>
+    </section>
+
+    <!-- The services section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>
+                Why choose us as your trusted learning partner?
+            </h2>
+
+            <hr class="custom_hr">
+            <!-- This line creates an `<hr>` (horizontal rule) element with the class "custom_hr."
+            Horizontal rules are typically used to separate content, and the class "custom_hr" suggests that this
+            particular horizontal rule will have custom styling applied to it using CSS. -->
+
+
+            <p>We have designed a system that is tailored to your needs</p>
+
+            <div class="features">
+                <!-- Here, a `<div>` element with the class "features" is defined. This serves as a container for a
+                    set of featured items or content that follows in the section. -->
+
+                <article class="feature">
+                    <figure>
+                        <img src="./img/serv1.png" alt="">
+                    </figure>
+                    <h3>Instructor-led classes</h3>
+                    <p>
+                        Classes are led by experienced instructors who are subject matter experts in their
+                        field.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+
+                <article class="feature">
+                    <figure>
+                        <img src="./img/serv2.png" alt="">
+                    </figure>
+                    <h3>Real world Experience</h3>
+                    <p>
+                        Azubi provides learners with the opportunity to apply the skills and knowledge they have
+                        learned
+                        in a real-world context.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+
+                <article class="feature">
+                    <figure>
+                        <img src="./img/serv3.png" alt="">
+                    </figure>
+                    <h3>Personalized Career Support</h3>
+                    <p>
+                        Personalized career support can help learners to identify their career goals and develop
+                        a
+                        plan
+                        for achieving them.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+                <!--    <article class="feature">: Inside the "features" <div>, there are three similar article (<article>)
+                            elements, each representing a feature or service.
+
+                    <figure>: Within each article, there's a <figure> element that is commonly used to contain
+                            media elements, such as images. In this case, it is used for displaying
+                            an image related to the feature.
+
+                    <img src="./img/serv1.png" alt="">: Inside each <figure>, there's an <img> element
+                        with the src attribute pointing to an image file ("./img/serv1.png") and an
+                        empty alt attribute, which should ideally contain alternative text for
+                        accessibility purposes.
+
+                    <h3>: Each article contains a level 3 heading (<h3>) that describes the feature.
+                          For example, "Instructor-led classes," "Real world Experience," and
+                          "Personalized Career Support" are the feature titles.
+
+                    <p>: Each article also includes a paragraph (<p>) element that provides a brief description of the feature. 
+
+                    <a href="#" class="btn">Read More</a>: At the end of each article, there's an anchor (<a>) element with an 
+                        empty href attribute (denoted by "#"), suggesting that the actual links are missing.
+                        The anchor text reads "Read More," indicating a link to get more information about each feature. 
+                        The class attribute is set to "btn," which is used for styling the link as a button. -->
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The contact section -->
+    <section class="contact" id="contact">
+        <div class="container">
+
+            <div class="text">
+                <h2>Contact Us</h2>
+                <p>If you have any specific concerns, please feel free to contact us.</p>
+                <p>We welcome any comments, suggestions, feedback, questions, or requests you have.</p>
+            </div>
+            <form class="form">
+                <!-- This line starts the definition of an HTML `<form>` element with a `class` attribute set to "form."
+                    The `<form>` element is used to create an interactive form on a web page.
+                    The `class` attribute can be used for styling or selecting the form using CSS or JavaScript. -->
+
+
+                <p>
+                    <label for="fullname"><span class="sr-only">Name</span></label>
+                    <!-- Inside the paragraph, this line defines a `<label>` element for an input field.
+                        The `for` attribute associates the label with an input field using its `id` attribute.
+                        In this case, it associates the label with an input field with the `id` "fullname." The `<span>`
+                        element with a class of "sr-only" is used for screen reader accessibility. It visually hides
+                        the text "Name" while making it accessible to screen readers so that visually impaired users
+                        can understand the purpose of the input field. -->
+
+
+                    <input type="text" placeholder="Name" id="fullname">
+                    <!-- This line defines an `<input>` element with a `type` attribute set to "text," indicating it's a text
+                    input field. The `placeholder` attribute provides a hint or example text to help users understand
+                    what to enter. The `id` attribute is set to "fullname," which corresponds to the `for` attribute in
+                    the associated `<label>`. This linkage allows users to click on the label to focus on the input field. -->
+
+
+                </p>
+
+                <p>
+                    <label for="email"><span class="sr-only">Email</span></label>
+                    <input type="email" placeholder="Name" id="email">
+                    <!-- It's a form input field with the type attribute set to "email," indicating that it's meant for
+                    entering an email address. The placeholder attribute provides a hint to the user, suggesting that
+                    they should enter their email address. The id attribute is set to "email," which matches the "for"
+                    attribute in the associated <label>, creating a link between the label and the input field. -->
+
+
+                </p>
+
+                <p>
+                    <label for="message"><span class="sr-only">Message</span></label>
+                    <textarea id="message" placeholder="Message"></textarea>
+                    <!-- This line represents an HTML <textarea> element. Textareas are used for multiline text input. 
+                        The id attribute is set to "message," matching the "for" attribute in the associated <label>, 
+                        creating a link between the label and the textarea. 
+                        The placeholder attribute provides a hint to the user, suggesting that they should enter a message in the textarea. -->
+
+
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit" class="btn">
+                    <!-- This line defines an `<input>` element with a `type` attribute set to "submit." This input acts as a
+                    submit button that users can click to submit the form. The `value` attribute sets the text displayed
+                    on the button ("Submit" in this case), and the `class` attribute is set to "btn," which indicates that 
+                    it should be styled as a button using CSS. -->
+
+
+                </p>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- The footer section -->
+    <footer class="footer">
+        <div class="container">
+
+            <div>
+                <div class="footer-logo">
+                    <img src="./img/logo.png" alt="Footer logo">
+                </div>
+
+                <div class="address">
+                    <div class="location-address">
+                        <i data-feather="map-pin"></i>
+                        <div class="text-address">Reiss Jct Rd, <br />
+                            North Legon- Accra - Ghana</div>
+                    </div>
+                    <div class="phone-address">
+                        <i data-feather="phone"></i>
+                        <div class="text-address">123-45-679</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social">
+                <ul class="sns">
+                    <li><a href="#"><i data-feather="twitter" class="icon_social"></i></a></li>
+                    <li><a href="#"><i data-feather="facebook" class="icon_social"></i></a></li>
+                    <li><a href="#"><i data-feather="instagram" class="icon_social"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        feather.replace();
+
+        function showOverlay() {
+            document.getElementById("overlay").style.display = "flex";
+            document.getElementById("overlay").classList.add("slide-from-right");
+        }
+
+        function hideOverlay() {
+            document.getElementById("overlay").style.display = "none";
+        }
+
+
+    </script>
+</body>
+
+</html>
