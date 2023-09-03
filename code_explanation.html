@@ -454,14 +454,34 @@ ranking of a webpage for specific language-based searches. So, setting it correc
 
     <script>
         feather.replace();
+        /* This line is a JavaScript function call. It invokes the `feather.replace()` function, 
+        which is typically used to replace HTML elements that have specific data attributes(e.g., `data-feather`) with SVG icons.
+        This line is used to enable the use of Feather Icons(an icon library) in your HTML by replacing placeholders with actual icons. */
+
 
         function showOverlay() {
             document.getElementById("overlay").style.display = "flex";
+            /* Inside the `showOverlay` function, this line uses the `document.getElementById` method to access an 
+            HTML element with the`id` attribute set to "overlay".
+            It then sets the `style.display` property of that element to "flex." 
+            This line makes an overlay element visible by changing its display style to "flex". */
+
+
             document.getElementById("overlay").classList.add("slide-from-right");
+            /* In the `showOverlay` function, this line uses `document.getElementById` to access the same 
+            "overlay" element as before.It then uses the `classList.add` method to add the "slide-from-right" 
+            class to the element's class list. Adding this class triggers CSS transitions or animations
+             to make the overlay slide in from the right when it's displayed. */
+
+
         }
 
         function hideOverlay() {
             document.getElementById("overlay").style.display = "none";
+            /*  Inside the `hideOverlay` function, this line again uses `document.getElementById` to access the "overlay" element. 
+            It then sets the `style.display` property to "none." 
+            This change in the `display` style property makes the overlay element invisible by hiding it from view. */
+
         }
 
 
